@@ -1,0 +1,32 @@
+= cheapwish
+
+* {Homepage}[https://github.com/psyomn/cheapwish#readme]
+* {Issues}[https://github.com/psyomn/cheapwish/issues]
+* {Documentation}[http://rubydoc.info/gems/cheapwish/frames]
+* {Email}[mailto:lethaljellybean at gmail.com]
+
+== Description
+
+TODO: Description
+
+== Features
+
+== Examples
+
+  require 'cheapwish'
+
+== Requirements
+
+== Install
+
+  $ gem install cheapwish
+
+== Synopsis
+
+  $ cheapwish
+
+== Copyright
+
+Copyright (c) 2015 psyomn
+
+See LICENSE.txt for details.
