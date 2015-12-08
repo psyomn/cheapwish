@@ -12,3 +12,20 @@ if File.directory?(File.join(root,'.git'))
     end
   end
 end
+
+require 'slop'
+require 'cheapwish'
+
+include Cheapwish
+
+Boot.strap
+
+Slop.parse do
+  on 'u', 'user', 'specify the user we want to check against', argument: :required
+  run do |opts,args|
+    unless opts[:u]
+      puts "You need to supply a user".red.bold
+      exit
+    end
+  end
+end
