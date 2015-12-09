@@ -21,4 +21,10 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 0.8'
   gem.add_development_dependency 'rspec', '~> 2.4'
   gem.add_development_dependency 'yard', '~> 0.8'
+
+  gem.add_runtime_dependency 'slop', '~> 3.6.0'
+  gem.add_runtime_dependency 'nokogiri', '~> 1.6.7'
+  gem.add_runtime_dependency 'sequel', '~> 4.29'
+  gem.add_runtime_dependency 'sqlite3', '~> 1.3.11'
+  gem.add_runtime_dependency 'colorize', '~> 0.7.7'
 end
