@@ -1,1 +1,10 @@
+require 'colorize'
+require 'sqlite3'
+require 'sequel'
+
+require 'cheapwish/constants'
+require 'cheapwish/boot'
 require 'cheapwish/version'
+require 'cheapwish/controller'
+require 'cheapwish/wishlist'
+require 'cheapwish/game'
