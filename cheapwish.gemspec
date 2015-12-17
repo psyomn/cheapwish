@@ -27,4 +27,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'sequel', '~> 4.29'
   gem.add_runtime_dependency 'sqlite3', '~> 1.3.11'
   gem.add_runtime_dependency 'colorize', '~> 0.7.7'
+  gem.add_runtime_dependency 'libnotify', '~> 0.9.1'
 end
