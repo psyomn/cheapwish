@@ -22,10 +22,15 @@ Boot.strap
 
 Slop.parse do
   on 'u', 'user', 'specify the user we want to check against', argument: :required
+  on 'w', 'who', 'show set user'
   run do |opts,args|
-    unless opts[:u]
-      puts "You need to supply a user".red.bold
-      exit
+    controller = Controller.new
+    if opts[:user]
+      controller.set_user(opts[:user])
+    elsif opts[:who]
+      puts controller.get_user
+    else
+      controller.run
     end
   end
 end

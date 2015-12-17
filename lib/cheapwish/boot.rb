@@ -19,8 +19,7 @@ module Cheapwish
     end
 
     def self.make_database
-      path = File.join(File.expand_path(File.dirname(__FILE__)), 'sql', 'migrations')
-      Sequel::Migration.apply(Constants::Db, path)
+      Sequel::Migrator.apply(Db, MigrationsDir)
       nil
     end
 
