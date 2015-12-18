@@ -1,5 +1,6 @@
-require 'yaml'
 require 'cheapwish'
+
+require 'yaml'
 
 module Cheapwish
   # Main thing that will go over 
@@ -7,7 +8,9 @@ module Cheapwish
   class Controller
     include Paths
     def run
-      config = load_settings
+      usr = get_user
+      scraper = Scraper.new(usr)
+      scraper.scrape
     end
 
     def set_user(user)

@@ -3,6 +3,7 @@ require 'sqlite3'
 require 'sequel'
 
 require 'cheapwish/constants'
+require 'cheapwish/scraper'
 require 'cheapwish/boot'
 require 'cheapwish/version'
 require 'cheapwish/controller'
