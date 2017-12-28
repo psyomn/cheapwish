@@ -5,8 +5,8 @@ require File.expand_path('../lib/cheapwish/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.name          = "cheapwish"
   gem.version       = Cheapwish::VERSION
-  gem.summary       = %q{TODO: Summary}
-  gem.description   = %q{TODO: Description}
+  gem.summary       = %q{Steam game price monitor}
+  gem.description   = %q{Steam game price monitor}
   gem.license       = "MIT"
   gem.authors       = ["psyomn"]
   gem.email         = "lethaljellybean@gmail.com"
@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec', '~> 2.4'
 
   gem.add_runtime_dependency 'slop', '~> 3.6.0'
-  gem.add_runtime_dependency 'nokogiri', '~> 1.6.7'
+  gem.add_runtime_dependency 'nokogiri', '~> 1.8'
   gem.add_runtime_dependency 'sequel', '~> 4.29'
   gem.add_runtime_dependency 'sqlite3', '~> 1.3.11'
   gem.add_runtime_dependency 'colorize', '~> 0.7.7'
